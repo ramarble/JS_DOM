@@ -1,6 +1,6 @@
+const ejArray = [];
+const br = document.createElement("br");
 
-var ejArray = [];
-var br = document.createElement("br");
 function crearEjercicios(n) {
   for (let i = 0; i < n; i++) {
     ejArray[i] = document.createElement("a")
@@ -8,7 +8,7 @@ function crearEjercicios(n) {
     ejArray[i].appendChild(br);
     ejArray[i].innerHTML += "Ejercicio " + (i+1);
     document.body.appendChild(ejArray[i])
-    }
+  }
 }
 
 crearEjercicios(8)
