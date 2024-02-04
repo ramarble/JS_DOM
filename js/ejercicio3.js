@@ -1,44 +1,29 @@
-const span = document.createElement("span")
+var rgb = new Uint8Array([0,0,0]);
 
-span.innerHTML = "spanspanspanspanspanspanspan"
-document.body.appendChild(span)
+const RGBstuffs = document.createElement("RGBstuffs");
+document.body.appendChild(RGBstuffs)
 
-span.onmouseover = function() {
-  span.style.color = "blue";
-}
-span.onmouseleave = function() {
-  span.style.color = "black"
+function updateString() {
+  RGBstuffs.innerHTML = "Element Span " + rgb[0] + " " + rgb[1] + " " + rgb[2];
 }
 
 
-const hi = document.createElement("hi");
-hi.innerHTML="sdsdkhg";
-document.body.appendChild(hi)
+var isMouseOver;
+updateString(); 
 
-var r = 0;
-var g = 0;
-var b = 0;
-hi.onmouseover = function() {
-  hi.style.color = "rgb("+r+", "+g+", "+b+")";
-  gIncrease()
-}
-function bIncrease() {
-  for (let i = 0; i < 255; i++) {
-    b += i;
-  }
-  if (r < 255) {
-    gIncrease()
-  }
-}
-function gIncrease() {
-  b = 0;
-  for (let i = 0; i <255; i++) {
-    g += i;
+function rgbIncrease() {
+  if (!isMouseOver) {
+    isMouseOver = setInterval(function() {
+        RGBstuffs.style.color = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
+        rgb[0] += 41;
+        rgb[1] += 71;
+        rgb[2] += 97;
+        updateString();
+      }, 30);
   }
 }
 
-function rIncrease() {
-  for (let i = 0; i <255; i++) {
-    r += i;
-  }
-}
+
+
+RGBstuffs.onmouseenter = function () { rgbIncrease()};
+RGBstuffs.onmouseleave = function () { clearInterval(isMouseOver); isMouseOver = null; }
