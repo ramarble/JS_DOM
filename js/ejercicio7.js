@@ -39,7 +39,6 @@ for (let i = 0; i < inputBoxes.length; i++) {
 };
 
 function mouseEntersInputBox(i, e) {
-        console.log(i)
         textBoxes[i].style.visibility = "visible"
         var x = e.clientX,
             y = e.clientY;
