@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ejercicio8</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+<body>
+  <!--
+    Utiliza el evento onsubmit y otras herramientas 
+    para impedir que se envíe el formulario si se
+    produce alguna de estas circunstancias:
+a) El nombre está vacío ó el correo electrónico está vacío.
+b) La edad es cero o menor de cero.
+En caso de producirse una de estas circunstancias, debe mostrarse el campo del formulario de un color distinto y un
+mensaje de advertencia. El color de advertencia debe desaparecer (dinámicamente) cuando el campo que tenía un
+problema tome el foco (para ello usa el evento onfocus).
+  -->
+
+  <h1>Seguimos aprendiendo</h1>
+  <p>Párrafo 1 de texto</p>
+  <p>Párrafo 2 de texto</p>
+<form name="action=" onsubmit="return validate()">
+  <input type="text" id="inputNombre" placeholder="Nombre:"><br>
+  <input type="text" id="inputApellidos" placeholder="Apellidos"><br>
+  <input type="number" id="inputEdad" placeholder="Edad"><br>
+  <input type="email" id="inputEmail" placeholder="E-Mail"><br>
+  <input type="submit" id="submit" value="Submit">
+  <input type="button" value="Clear">
+  </form>
+
+
+<button onclick="window.location='./index.html'">Go back To Index</button>
+  
+  <script src="./js/ejercicio8.js"></script>
+</body>
+</html>
