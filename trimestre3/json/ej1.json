@@ -1,0 +1,20 @@
+{
+    "DAM": 
+    {
+    "Curso": [23,24],
+    "Evaluación": "Segunda",
+    "Alumnos": [
+    {
+        "Nombre": "Irene",
+        "Apellido": "García"
+    },
+    {
+        "Nombre": "Pablo",
+        "Apellido": "Fernández"
+    },
+    {
+        "Nombre": "Alejandro",
+        "Apellido": "Román"
+    }]
+    }
+}
