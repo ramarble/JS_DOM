@@ -1,16 +1,14 @@
 
 let pForm = document.getElementById("form01");
 
+console.log(pForm)
 
 function backToWhite(elem) {
     elem.addEventListener("mouseover", function (e) { this.style.backgroundColor = "white" });
 }
 
 
-
 function validate() {
-
-
 
     var pFormName = pForm[0];
     var pFormApellido = pForm[1];
@@ -20,13 +18,13 @@ function validate() {
     var email = validEmail(pFormEmail.value);
     var earlyExit = false;
 
+
     backToWhite(pFormEdad);
     backToWhite(pFormName);
     backToWhite(pFormEmail);
 
     if (!pFormName.value) {
         pFormName.style.backgroundColor = "pink"
-        
         earlyExit = true
     }
 
