@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="musicos">
+    <xsd:complexType>
+    <xsd:sequence>    
+        <xsd:element ref="musico" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+    </xsd:sequence>    
+    </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="musico">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"></xsd:element>
+            <xsd:element name="apodo" type="xsd:string" minOccurs="0"></xsd:element>
+            <xsd:element name="fechaNacimiento" type="xsd:date"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
