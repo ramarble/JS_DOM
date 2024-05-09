@@ -1,0 +1,85 @@
+
+{
+    "Arboles" : 
+    [
+        {
+            "Código": 1,
+            "Nombre": "Abeto",
+            "TipoHoja" : "Perenne",
+            "AlturaCm" : 3000,
+            "AnchuraCircumCm" : 600,
+            "AnyosSupervivencia" : 40,
+            "Pajaros" : 
+            [
+                {
+                    "Especie" : "Golondrina",
+                    "TamanyoNido": 3
+                },
+                {
+                    "Especie": "Loro",
+                    "TamanyoNido": 30
+                }
+            ]
+        },
+        {
+            "Código": 2,
+            "Nombre": "Palmera",
+            "TipoHoja" : "Perenne",
+            "AlturaCm" : 1700,
+            "AnchuraCircumCm" : 170,
+            "AnyosSupervivencia" : 10,
+            "Pajaros" : []
+        },
+        {
+            "Código": 3,
+            "Nombre": "Yggrassil",
+            "TipoHoja" : "???",
+            "AlturaCm" : 2300,
+            "AnchuraCircumCm" : 500,
+            "AnyosSupervivencia" : null,
+            "Pajaros" : 
+            [
+                {
+                    "Especie" : "Dodo",
+                    "TamanyoNido": 1,
+                    "Nota" : "Cómo ha llegado ahí?!"
+                },
+                {
+                    "Especie": "Flamingo",
+                    "TamanyoNido": 1,
+                    "Nota" : "Debe ser una broma de mal gusto"
+                }
+            ]
+        },
+        {
+            "Código": 4,
+            "Nombre": "Secuoya",
+            "TipoHoja" : "Perenne",
+            "AlturaCm" : 10000,
+            "AnchuraCircumCm" : 1000,
+            "AnyosSupervivencia" : 300,
+            "Pajaros" : []
+
+        }, 
+        {
+            "Código": 5,
+            "Nombre": "Caoba",
+            "TipoHoja" : "Perenne",
+            "AlturaCm" : 3000,
+            "AnchuraCircumCm" : 300,
+            "AnyosSupervivencia" : 40,
+            "Pajaros" : []
+
+        }, 
+        {
+            "Código": 6,
+            "Nombre": "Teca",
+            "TipoHoja" : "Perenne",
+            "AlturaCm" : 2300,
+            "AnchuraCircumCm" : 180,
+            "AnyosSupervivencia" : 40,
+            "Pajaros" : []
+
+        }
+    ]    
+}
